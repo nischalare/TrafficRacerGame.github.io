@@ -1,0 +1,237 @@
+/*(1) For teh body section, we have a height, Width, margin, background clolr, and a font family */
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #28730d;
+    font-family: 'WaltographRegular';
+   font-weight: normal;
+   font-style: normal;
+   font-size: 20px;
+
+}
+
+/*(2) For the container, we have posotion, height, width, margin-top, background color and overflow */
+#container{
+    position: relative;
+    height: 99vh;
+    width: 25%;
+    left: 35%;
+    margin-top: 20px;;
+    background-color: #292929;
+    overflow: hidden;
+}
+
+/*(3) We have a common class line with position, height, width, margin-left and a background color */
+.line{
+    position: absolute;
+    height: 150px;
+    width: 4%;
+    margin-left: 48%;
+    background-color: rgba(255,255,255,0.5);
+
+/*(4) For each line 1, line 2 and line 3, for positioning, we have given line 1 a top of -150 pixels
+        line 2 a top of 50 pixels and for line 3a top of 450 pixels */
+}
+#line_1{
+    top: -150px;
+}
+#line_2{
+    top: 150px;
+}
+#line_3{
+    top: 450px;
+}
+
+/*(5) Similarly, we have a common class 'car' containing position, height, width, border-radius and box-shadow  */
+.car{
+    position: absolute;
+    height: 60px;
+    width: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 8px 0px black;
+}
+
+/*(6) This is our car or the player's car and we are setting the bottom as 9%, left as 55% and the background color is a hexcode  */
+#car{
+    bottom: 9%;
+    left: 55%;
+    background-color: #de168b;
+}
+
+/*(7) Here we are specifying styles for the front glass of the cars */
+.f_glass{
+    position: absolute;
+    height: 20%;
+    width: 60%;
+    margin-left: 20%;
+    top: 15%;
+    border-radius: 0px 0px 5px 5px;
+    background-color: #a6f28a;
+}
+
+/*(8) We are now giving styles for the back glass of the cars */
+.b_glass{
+    position: absolute;
+    height: 20%;
+    width: 60%;
+    margin-left: 20%;
+    bottom: 15%;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #a6f28a;
+}
+
+/*(9) Similarly, we are now mentioning different styles for the headlights of the cars on both left and right sides*/
+.f_light_l{
+    position: absolute;
+    height: 10%;
+    width: 20%;
+    margin-left: 10%;
+    top: -6%;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #faed00;
+}
+.f_light_r{
+    position: absolute;
+    height: 10%;
+    width: 20%;
+    margin-left: 70%;
+    top: -6%;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #faed00;
+}
+
+/*(10) Now we have our front left tyre and it's styling below */
+.f_tyre_l{
+    position: absolute;
+    height: 20%;
+    width: 10%;
+    background-color: #4d4c3c;
+    top: 20%;
+    left: -10%;
+    border-radius: 5px 0px 0px 5px;
+}
+
+/*(11) Similarly, we have our front right tyre and it's styling below */
+.f_tyre_r{
+    position: absolute;
+    height: 20%;
+    width: 10%;
+    background-color: #4d4c3c;
+    top: 20%;
+    left: 100%;
+    border-radius: 0px 5px 5px 0px;
+}
+
+/*(12) Now, we need to add style to back side left tyre of the car */
+.b_tyre_l{
+    position: absolute;
+    height: 20%;
+    width: 10%;
+    background-color: #4d4c3c;
+    top: 70%;
+    left: -10%;
+    border-radius: 5px 0px 0px 5px;
+}
+
+/*(13) Likewise, we have the back right tyre */
+.b_tyre_r{
+    position: absolute;
+    height: 20%;
+    width: 10%;
+    background-color: #4d4c3c;
+    top: 70%;
+    left: 100%;
+    border-radius: 0px 5px 5px 0px;
+}
+
+/*(14) We now have to style those three opponent cars
+       starting with car 1*/
+
+/*(15) For car 1, top is -100 pixels, left is 50% and the background color is a hexcode */
+
+/*(16) Initially, at the beginning or start of the game, we don't want those three opponent cars to be present near our
+        player's car    */
+
+/*(17) For this purpose, we are setting different top values for each car */
+
+/*(18)  So, for car 1, top is -100 pixels */
+#car_1{
+    top: -100px;
+    left: 59%;
+    background-color: #270463;
+}
+
+/*(19) For car 2, top is -200 pixels */
+#car_2{
+    top: -200px;
+    left: 33%;
+    background-color: #270463;
+}
+
+/*(20) For car 3, top is -350 pixels and left is 44% */
+#car_3{
+    top: -350px;
+    left: 44%;
+    background-color: #270463;
+}
+
+/*(21) We have a seperate div for restart called restart_div wherein we are declaring postion, height, width, background color
+        color, font-family, text align and finally display */
+#restart_div {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #292929;
+    color: white;
+    font-family: sans-serif;
+    font-size: 40px;
+    text-align: center;
+    display: none;
+}
+
+/*(22) We now have the restart button */
+#restart {
+    border: none;
+    padding: 25px;
+    color: white;
+    background-color: #0d8278;
+    font-size: 30px;
+    margin-top: 30%;
+    font-family: 'WaltographRegular';
+   font-weight: normal;
+   font-style: normal;
+}
+
+/*(23) Inside the restart button, we have a small text and we will style it too*/
+.small_text{
+    font-size: 15px;
+}
+
+/*(24) we shall style the score_div also */
+#score_div{
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 8%;
+    font-size: 35px;
+    background-color: white;
+    color: #454545;
+    padding: 10px;
+    box-shadow: 4px 4px 0px 1px #808080;
+}
+
+/*(25) If we observe on the very top of the html page, we can find help or tips to play the game and it's corresponding styling
+         is shown below  */
+#help{
+	text-align: center;
+}
+
+/*(26) Finally, on the extreme bottom right corner of our html file or webpage, we can observe that we have a tree and
+       it's corrsponding styling is given below */
+#tree{
+  position: static;
+  margin-top: 10%;
+  margin-left: 67%;
+}
+
+/*(27) That was all about CSS File, now let's talk about javascript file */

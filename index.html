@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--(1) Let's first start our discussion with html file -->
+<head>
+    <meta charset="UTF-8">
+
+<!--(2) In the title, we have traffic racer   -->
+    <title>Traffic racer</title>
+<!--(3) We have also linked the css file with our html file -->
+    <link href="style.css" rel="stylesheet" />
+<!--(4) I have also included the font fontlibrary link -->
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/waltograph" type="text/css"/>
+  </head>
+<!--(6) Now, Let's discuss the body section of our html page -->
+<body>
+<!--(7) We have a divsion below -->
+    <div id="help">
+        <p>Controls: Right, Left, Up & Down Arrow Keys.</p>
+    </div>
+<!--(8) We have a score span  -->
+    <div id="score_div">
+        Score: <span id="score">0</span>
+        <br>
+        <hr>
+        High Score: <span id="high_score">0</span>
+    </div>
+<!--(9) We have a container -->
+    <div id="container">
+<!--(10) We have three lines on the center of the road with different ids but same class "line" -->
+        <div id="line_1" class="line"></div>
+        <div id="line_2" class="line"></div>
+        <div id="line_3" class="line"></div>
+<!--(11) The div with id car is our car i.e. (the player's car) -->
+        <div id="car" class="car">
+<!--(12) We have different divs inside this car div like front glass, back glass, front tyre on left side of the car, front
+         tyre on right side of the car, back tyre on left side of teh car, back tyre on right side of the car and we also have two
+         headlights -->
+            <div class="f_glass"></div>
+            <div class="b_glass"></div>
+            <div class="f_light_l"></div>
+            <div class="f_light_r"></div>
+            <div class="f_tyre_l"></div>
+            <div class="f_tyre_r"></div>
+            <div class="b_tyre_l"></div>
+            <div class="b_tyre_r"></div>
+        </div>
+<!--(13) Next we have car 1, car 2 and car 3, which are the opponent cars in the game with different ids -->
+        <div id="car_1" class="car">
+            <div class="f_glass"></div>
+            <div class="b_glass"></div>
+            <div class="f_light_l"></div>
+            <div class="f_light_r"></div>
+            <div class="f_tyre_l"></div>
+            <div class="f_tyre_r"></div>
+            <div class="b_tyre_l"></div>
+            <div class="b_tyre_r"></div>
+        </div>
+        <div id="car_2" class="car">
+            <div class="f_glass"></div>
+            <div class="b_glass"></div>
+            <div class="f_light_l"></div>
+            <div class="f_light_r"></div>
+            <div class="f_tyre_l"></div>
+            <div class="f_tyre_r"></div>
+            <div class="b_tyre_l"></div>
+            <div class="b_tyre_r"></div>
+        </div>
+        <div id="car_3" class="car">
+            <div class="f_glass"></div>
+            <div class="b_glass"></div>
+            <div class="f_light_l"></div>
+            <div class="f_light_r"></div>
+            <div class="f_tyre_l"></div>
+            <div class="f_tyre_r"></div>
+            <div class="b_tyre_l"></div>
+            <div class="b_tyre_r"></div>
+
+
+
+        </div>
+<!--(14) Next we have a restart div with a button -->
+        <div id="restart_div">
+<!--(15) when we press the restart, the game will restart -->
+            <button id="restart">
+                Restart<br>
+                <hr>
+                <small class="small_text">(Press Enter)</small>
+            </button>
+        </div>
+
+
+
+    </div>
+<!--(16) If we scroll down in the html page, we can find a tree and for that the corresponding code is below -->
+<!--(17) That's all about html file. Now let's discuss the css file -->
+    <div id="tree">
+      <img id="tree1" src="tree.jpg" alt="">
+    </div>
+
+
+<!--(5) If we scroll down untill here, we can observe that we have already included the jQuery library and the javascript file -->
+
+    <script src="jquery.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
